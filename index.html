@@ -1,0 +1,995 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动漫共和国官网 - 官方正版APP下载 | 追番神器</title>
+  <meta name="description" content="访问动漫共和国官方网站，获取最新、最安全的官方正版APP下载。动漫共和国是一款专为二次元爱好者打造的追番神器，内容更新快，体验流畅，认准官网，谨防山寨应用。">
+  <meta name="keywords" content="动漫共和国,动漫共和国APP,动漫共和国官网,动漫共和国下载">
+  <link rel="icon" href="https://edu-30130.sz.gfp.tencent-cloud.com/admin/12b531c4933b74c87de514f5511beb77.ico">
+  <style>
+    :root {
+      --primary-color: #FDB833;
+      --primary-gradient: linear-gradient(135deg, #E6A429 0%, #FDB833 50%, #F4A935 100%);
+      --primary-hover-gradient: linear-gradient(135deg, #D4941F 0%, #E6A429 50%, #FDB833 100%);
+      --secondary-color: #F6F8FF;
+      --text-color: #151515;
+      --light-text: #686F7E;
+      --border-radius: 10px;
+      --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+  box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--secondary-color);
+    }
+    
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .main-content {
+      flex: 1;
+      background-color: var(--secondary-color);
+      background-image: url("https://static.yximgs.com/udata/pkg/559f6c913534458e87ab238c222550c8.png");
+      background-size: 100% auto;
+      background-position: top center;
+      background-repeat: no-repeat;
+      padding: 0 20px 60px;
+    }
+    
+    @media (min-width: 1200px) {
+      .main-content {
+        padding: 0 360px 60px;
+      }
+    }
+    
+    header {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .logo {
+      width: 167px;
+      height: 40px;
+      margin-bottom: 58px;
+    }
+    
+    .logo-text {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 58px;
+      gap: 20px;
+    }
+    
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 0;
+    }
+    
+    .hero-section {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .hero-title {
+      font-size: 44px;
+      font-weight: 500;
+      line-height: 52px;
+      color: var(--text-color);
+      margin-bottom: 7px;
+    }
+    
+    .hero-subtitle {
+      font-size: 22px;
+      letter-spacing: 7px;
+      color: rgba(21, 21, 21, 0.6);
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .save-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      min-width: 290px;
+      padding: 0 40px;
+      background: var(--primary-gradient);
+      color: white;
+      font-size: 24px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      border: none;
+      margin-bottom: 78px;
+    }
+    
+    .save-button:hover {
+      background: var(--primary-hover-gradient);
+    }
+    
+    .save-button svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    
+    .section-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      color: var(--text-color);
+      margin-bottom: 24px;
+      padding-bottom: 8px;
+      background-image: url("https://static.yximgs.com/udata/pkg/f5c2f2432bdb48bc9ebcd15721e052be.png");
+      background-size: 60px 12px;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+    }
+    
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    
+    .download-card {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: var(--border-radius);
+      padding: 20px 32px;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+    }
+    
+    .app-info {
+      flex: 1;
+      margin-left: 16px;
+    }
+    
+    .app-name {
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    
+    .app-description {
+      font-size: 14px;
+      color: var(--light-text);
+    }
+    
+    .qr-code {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .download-button {
+      background-color: rgba(253, 184, 51, 0.16);
+      color: var(--primary-color);
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0 20px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    text-align: center;
+  }
+    
+    .download-button:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    .alert {
+      background-color: white;
+      color: #B1740F;
+      padding: 15px 20px;
+      border-radius: var(--border-radius);
+      margin-bottom: 30px;
+      box-shadow: var(--box-shadow);
+      line-height: 1.6;
+      border: 1px solid rgba(253, 184, 51, 0.3);
+      font-weight: 500;
+    }
+    
+    .alert p {
+      margin-bottom: 12px;
+    }
+    
+    .alert p:last-child {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    
+    .highlight {
+      background-color: rgba(0, 132, 255, 0.1);
+      color: var(--primary-color);
+      padding: 0 4px;
+      font-weight: bold;
+    }
+    
+    .installation-guide {
+      background-color: white;
+      border-radius: var(--border-radius);
+      padding: 25px;
+      margin-bottom: 40px;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .guide-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .guide-tab {
+      padding: 8px 15px;
+      background-color: rgba(253, 184, 51, 0.16);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: var(--primary-color);
+    }
+    
+    .guide-tab.active {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    .guide-content {
+      display: none;
+    }
+    
+    .guide-content.active {
+      display: block;
+    }
+    
+    .guide-step {
+      margin-bottom: 15px;
+    }
+    
+    .guide-step b {
+      color: var(--primary-color);
+    }
+    
+    footer {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+  display: flex;
+  justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      .logo {
+        width: 84px;
+        height: 20px;
+        margin-bottom: 24px;
+      }
+      
+      .logo-text {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      
+      .hero-title {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .hero-subtitle {
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .save-button {
+        height: 50px;
+        font-size: 20px;
+        min-width: 234px;
+        padding: 0 20px;
+        margin-bottom: 40px;
+      }
+      
+      .save-button span {
+        letter-spacing: 2px;
+      }
+      
+      .download-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .download-card {
+        padding: 16px;
+      }
+      
+      .app-icon {
+        width: 42px;
+        height: 42px;
+      }
+      
+      .qr-code {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    
+    /* 修复弹窗样式问题 */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* 确保内容正确居中显示 */
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+    
+    /* 确保图片正确显示 */
+    .modal img.preview-image {
+      max-height: 60vh;
+      max-width: 90%;
+      border-radius: 20px;
+      pointer-events: auto;
+      user-select: auto;
+      object-fit: contain;
+    }
+    
+    /* 添加弹窗文字样式 */
+    .modal p {
+      margin-top: 12px;
+      color: white;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .modal p img {
+      width: 20px;
+      margin-left: 8px;
+      border-radius: 0;
+    }
+    
+    /* 修复关闭按钮样式 */
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1001;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+    }
+    
+    /* 自定义灰底白色图标样式 - 所有图标统一为浅灰色且更小 */
+    .custom-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #999;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* 聚点联盟图标样式 */
+    .custom-icon.small {
+      width: 50px;
+      height: 50px;
+      background-color: #999;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .custom-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+        padding: 8px;
+      }
+      
+      .custom-icon.small {
+        width: 38px;
+        height: 38px;
+        padding: 8px;
+      }
+    }
+
+    /* 图标内的SVG样式 */
+    .custom-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: white;
+    }
+
+    /* 底部横向铺满按钮样式 */
+    .help-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      width: calc(100% - 40px);
+      background: var(--primary-gradient);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 15px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(253, 184, 51, 0.3);
+      z-index: 1000;
+      transition: all 0.3s ease;
+      display: none;
+      text-align: center;
+    }
+
+    .help-button:hover {
+      background: var(--primary-hover-gradient);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(253, 184, 51, 0.4);
+    }
+
+    /* 只在移动端显示 */
+    @media (max-width: 768px) {
+      .help-button {
+        display: block;
+      }
+    }
+
+    /* 断网安装教程弹窗样式 */
+    .install-guide-modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .install-guide-content {
+      background-color: white;
+      margin: 5% auto;
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 500px;
+      max-height: 80vh;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .install-guide-content h3 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .install-guide-content .step {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: rgba(253, 184, 51, 0.1);
+      border-radius: 8px;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    .install-guide-content .step-title {
+      font-weight: bold;
+      color: #B1740F;
+      margin-bottom: 5px;
+    }
+
+    .close-install-guide {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      color: #999;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close-install-guide:hover {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-content">
+      <header>
+        <div class="logo-text">
+          <img 
+            src="https://mdn.alipay.com/wsdk/img?fileid=A*jvl7RZu2Cw0AAAAAAAAAAAAAAfYuAQ"
+            alt="动漫共和国官网Logo"
+            class="logo-icon"
+          />
+          <span>动漫共和国</span>
+        </div>
+      </header>
+      
+      <div class="hero-section">
+        <h1 class="hero-title">动漫共和国官网 - 官方APP下载</h1>
+        <p class="hero-subtitle">认准动漫共和国官方网站，获取最新安全版本</p>
+        <button class="save-button">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.3332 8.66634V23.333C29.3332 26.2785 26.9454 28.6663 23.9998 28.6663H7.99983C5.05431 28.6663 2.6665 26.2785 2.6665 23.333V8.66635C2.6665 5.72083 5.05432 3.33301 7.99984 3.33301H23.9998C26.9454 3.33301 29.3332 5.72082 29.3332 8.66634ZM16.0002 6.22304C16.6132 6.22304 17.1102 6.72 17.1102 7.33304V16.7609L19.2387 14.754C19.6848 14.3334 20.3873 14.3541 20.8078 14.8001C21.2284 15.2462 21.2077 15.9487 20.7617 16.3692L16.7617 20.1407C16.3341 20.5438 15.6663 20.5438 15.2387 20.1407L11.2387 16.3692C10.7927 15.9487 10.772 15.2462 11.1926 14.8001C11.6131 14.3541 12.3156 14.3334 12.7617 14.754L14.8902 16.7609V7.33304C14.8902 6.72 15.3872 6.22304 16.0002 6.22304ZM22.9521 22.0954C23.2675 22.6211 23.097 23.3029 22.5713 23.6184C16.7654 27.1019 11.386 25.0933 9.33426 23.5545C8.84383 23.1867 8.74443 22.491 9.11226 22.0005C9.48008 21.5101 10.1758 21.4107 10.6663 21.7785C12.1701 22.9064 16.5684 24.6312 21.4292 21.7147C21.9548 21.3993 22.6367 21.5698 22.9521 22.0954Z" fill="white"/>
+          </svg>
+          <span>保存网址</span>
+        </button>
+      </div>
+      
+      <div class="alert">
+        <p>⚠️ 敬告：大环境恶化严重，被禁止安装的用户请尝试断网(飞行模式)安装！</p>
+        <p>⚠️ 各大手机厂商使用的腾讯病毒库会对APP恶意报毒，请无视报毒提示，授权安装！</p>
+      </div>
+      
+      <h2 class="section-title">移动端应用</h2>
+      <div class="download-grid">
+        <div class="download-card">
+          <div class="custom-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6,18c0,0.55 0.45,1 1,1h1v3.5c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5L11,19h2v3.5c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5L16,19h1c0.55,0 1,-0.45 1,-1L18,8L6,8L6,18zM3.5,8C2.67,8 2,8.67 2,9.5v7c0,0.83 0.67,1.5 1.5,1.5S5,17.33 5,16.5v-7C5,8.67 4.33,8 3.5,8zM20.5,8c-0.83,0 -1.5,0.67 -1.5,1.5v7c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5v-7c0,-0.83 -0.67,-1.5 -1.5,-1.5zM15.53,2.16l1.3,-1.3c0.2,-0.2 0.2,-0.51 0,-0.71 -0.2,-0.2 -0.51,-0.2 -0.71,0l-1.48,1.48C13.85,1.23 12.95,1 12,1c-0.96,0 -1.86,0.23 -2.66,0.63L7.85,0.15c-0.2,-0.2 -0.51,-0.2 -0.71,0 -0.2,0.2 -0.2,0.51 0,0.71l1.31,1.31C6.97,3.26 6,5.01 6,7h12c0,-1.99 -0.97,-3.75 -2.47,-4.84zM10,5L9,5L9,4h1v1zM15,5h-1L14,4h1v1z"/>
+            </svg>
+          </div>
+          <div class="app-info">
+            <h3 class="app-name">动漫共和国 (Android版)</h3>
+            <p class="app-description">最新版本：1.0.0.7</p>
+          </div>
+          <a href="https://static.yximgs.com/bs2/ad-app/YWQtYXBwOmFkX2RzcF9hcHA6NDMxNTAyMDk3ODpNRVJDSEFOVDpbQkA0OGI5N2VlZDoxMDA1MTg1MDIzNzk3OA%3D%3D.apk" id="android-download" class="download-button">点击下载</a>
+        </div>
+        
+        <div class="download-card">
+          <div class="custom-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.05,20.28c-0.98,0.95-2.05,0.8-3.08,0.35c-1.09-0.46-2.09-0.48-3.24,0c-1.44,0.62-2.2,0.44-3.06-0.35 C2.79,15.5,3.51,7.6,8.42,7.31c1.74,0.07,2.47,0.94,3.47,0.97c1.29-0.11,2.01-0.96,3.48-1.03c1.33,0.05,2.51,0.53,3.33,1.34 c-2.04,1.75-1.71,5.06,0.54,6.44C18.18,17.23,17.64,18.55,17.05,20.28z M13,5.95c0.05-1.77,1.28-3.21,2.94-3.95 C16.26,3.75,15.2,5.8,13,5.95z"/>
+            </svg>
+          </div>
+          <div class="app-info">
+            <h3 class="app-name">iOS版 (Demo)</h3>
+            <p class="app-description">演示版本，点击下载体验</p>
+          </div>
+          <a href="https://vfiles.gtimg.cn/wuji_open/ipa666.html" class="download-button">点击下载</a>
+        </div>
+      </div>
+      
+      <h2 class="section-title">其他应用</h2>
+      <div class="download-grid">
+        <div class="download-card">
+          <div class="custom-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z"/>
+            </svg>
+          </div>
+          <div class="app-info">
+            <h3 class="app-name">Windows版</h3>
+            <p class="app-description">最新版：1.1.9</p>
+          </div>
+          <a href="https://retina-res.oss-cn-beijing.aliyuncs.com/upload/1524480893986776%5Cdmghg-1.1.9-setup.exe" class="download-button">点击下载</a>
+        </div>
+        
+        <div class="download-card">
+          <div class="custom-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21,3H3C1.9,3,1,3.9,1,5v12c0,1.1,0.9,2,2,2h5v2h8v-2h5c1.1,0,1.99-0.9,1.99-2L23,5C23,3.9,22.1,3,21,3z M21,17H3V5h18V17z M16,11l-7,4V7L16,11z"/>
+            </svg>
+          </div>
+          <div class="app-info">
+            <h3 class="app-name">TV版</h3>
+            <p class="app-description">暂未上线，敬请期待</p>
+          </div>
+          <span class="download-button" style="background-color: #e0e0e0; color: #888; cursor: not-allowed;">暂无下载</span>
+        </div>
+      </div>
+      
+      <h2 class="section-title">聚点联盟应用</h2>
+      <div class="download-grid">
+        <div class="download-card">
+          <div class="custom-icon small">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6,18c0,0.55 0.45,1 1,1h1v3.5c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5L11,19h2v3.5c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5L16,19h1c0.55,0 1,-0.45 1,-1L18,8L6,8L6,18zM3.5,8C2.67,8 2,8.67 2,9.5v7c0,0.83 0.67,1.5 1.5,1.5S5,17.33 5,16.5v-7C5,8.67 4.33,8 3.5,8zM20.5,8c-0.83,0 -1.5,0.67 -1.5,1.5v7c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5v-7c0,-0.83 -0.67,-1.5 -1.5,-1.5zM15.53,2.16l1.3,-1.3c0.2,-0.2 0.2,-0.51 0,-0.71 -0.2,-0.2 -0.51,-0.2 -0.71,0l-1.48,1.48C13.85,1.23 12.95,1 12,1c-0.96,0 -1.86,0.23 -2.66,0.63L7.85,0.15c-0.2,-0.2 -0.51,-0.2 -0.71,0 -0.2,0.2 -0.2,0.51 0,0.71l1.31,1.31C6.97,3.26 6,5.01 6,7h12c0,-1.99 -0.97,-3.75 -2.47,-4.84zM10,5L9,5L9,4h1v1zM15,5h-1L14,4h1v1z"/>
+            </svg>
+          </div>
+          <div class="app-info">
+            <h3 class="app-name">聚点APP安卓版</h3>
+            <p class="app-description">第三方广告合作平台 (钻石来源)</p>
+          </div>
+          <a href="https://adveobs.zshtys888.com/2025/02/25/3e035d37-0477-4735-87dc-3ef529e315ce.apk" class="download-button">点击下载</a>
+        </div>
+        
+        <div class="download-card">
+          <div class="custom-icon small">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.05,20.28c-0.98,0.95-2.05,0.8-3.08,0.35c-1.09-0.46-2.09-0.48-3.24,0c-1.44,0.62-2.2,0.44-3.06-0.35 C2.79,15.5,3.51,7.6,8.42,7.31c1.74,0.07,2.47,0.94,3.47,0.97c1.29-0.11,2.01-0.96,3.48-1.03c1.33,0.05,2.51,0.53,3.33,1.34 c-2.04,1.75-1.71,5.06,0.54,6.44C18.18,17.23,17.64,18.55,17.05,20.28z M13,5.95c0.05-1.77,1.28-3.21,2.94-3.95 C16.26,3.75,15.2,5.8,13,5.95z"/>
+            </svg>
+          </div>
+          <div class="app-info">
+            <h3 class="app-name">聚点APP iOS版</h3>
+            <p class="app-description">第三方广告合作平台 (钻石来源)</p>
+          </div>
+          <a href="https://apps.apple.com/app/id6742224056" class="download-button">点击下载</a>
+        </div>
+      </div>
+      
+      <div class="installation-guide" id="install-guide">
+        <h2 class="section-title">断网安装教程</h2>
+        
+        <div class="guide-tabs">
+          <div class="guide-tab active" data-tab="general">通用方法</div>
+          <div class="guide-tab" data-tab="huawei">华为</div>
+          <div class="guide-tab" data-tab="xiaomi">小米</div>
+          <div class="guide-tab" data-tab="oppo">OPPO/realme</div>
+          <div class="guide-tab" data-tab="vivo">vivo</div>
+          <div class="guide-tab" data-tab="samsung">三星</div>
+        </div>
+        
+        <div class="guide-content active" data-content="general">
+          <div class="guide-step">
+            <b>1. 准备 APK 文件：</b>在落地页下载APP的APK文件
+          </div>
+          <div class="guide-step">
+            <b>2. 断开网络：</b>下载完成后，暂时断开网络，关闭Wi-Fi和移动数据，或者直接启用飞行模式，以确保安全安装！
+          </div>
+          <div class="guide-step">
+            <b>3. 启用未知来源安装：</b>打开手机的 <span style="color:red">设置 > 安全 > 安装未知来源的应用</span> 或 <span>允许从未知来源安装应用</span>。在安卓 8.0 以上的版本中，设置可能在 <span style="color:red">应用和通知 > 特殊应用权限 > 安装未知应用</span> 中。
+          </div>
+          <div class="guide-step">
+            <b>4. 找到 APK 文件并安装：</b>打开"文件管理器"找到下载的 APK 文件。点击文件，根据提示进行安装。
+          </div>
+          <div class="guide-step">
+            <b>5. 观看影片：</b>安装完成后，去应用列表中寻找我们的影视APP，打开它，并记得连接Wi-Fi或移动数据哦！
+          </div>
+        </div>
+        
+        <div class="guide-content" data-content="huawei">
+          <div class="guide-step">
+            <b>断开网络：</b>下载完成后，暂时断开网络，关闭Wi-Fi和移动数据，或者直接启用飞行模式，以确保安全安装！
+          </div>
+          <div class="guide-step">
+            <b>设置未知来源安装：</b>打开 <span style="color:red">设置 > 安全 > 更多安全设置 > 未知来源安装</span>，选择"文件管理器"或"应用来源"并允许安装。
+          </div>
+          <div class="guide-step">
+            <b>安装 APK：</b>在"文件管理器"中找到 APK 文件，点击安装。
+          </div>
+        </div>
+        
+        <div class="guide-content" data-content="xiaomi">
+          <div class="guide-step">
+            <b>断开网络：</b>下载完成后，暂时断开网络，关闭Wi-Fi和移动数据，或者直接启用飞行模式，以确保安全安装！
+          </div>
+          <div class="guide-step">
+            <b>设置未知来源安装：</b>打开 <span style="color:red">设置 > 更多设置 > 隐私 > 特殊应用权限 > 安装未知来源应用</span>，选择"文件管理器"或"应用来源"并允许安装。
+          </div>
+          <div class="guide-step">
+            <b>安装 APK：</b>通过"小米文件管理器"或"下载文件夹"找到 APK 文件并安装。
+          </div>
+        </div>
+        
+        <div class="guide-content" data-content="oppo">
+          <div class="guide-step">
+            <b>断开网络：</b>下载完成后，暂时断开网络，关闭Wi-Fi和移动数据，或者直接启用飞行模式，以确保安全安装！
+          </div>
+          <div class="guide-step">
+            <b>设置未知来源安装：</b>打开 <span style="color:red">设置 > 安全 > 安装未知应用</span>，选择"文件管理器"或"应用来源"并允许安装。
+          </div>
+          <div class="guide-step">
+            <b>安装 APK：</b>打开"文件管理器"，找到 APK 文件，点击安装。
+          </div>
+        </div>
+        
+        <div class="guide-content" data-content="vivo">
+          <div class="guide-step">
+            <b>断开网络：</b>下载完成后，暂时断开网络，关闭Wi-Fi和移动数据，或者直接启用飞行模式，以确保安全安装！
+          </div>
+          <div class="guide-step">
+            <b>设置未知来源安装：</b>进入 <span style="color:red">设置 > 更多设置 > 安全 > 安装未知来源应用</span>，允许"文件管理器"或"其他应用安装未知来源"的APK。
+          </div>
+          <div class="guide-step">
+            <b>安装 APK：</b>通过"我的文件管理器"找到 APK 文件，点击安装。
+          </div>
+        </div>
+        
+        <div class="guide-content" data-content="samsung">
+          <div class="guide-step">
+            <b>断开网络：</b>下载完成后，暂时断开网络，关闭Wi-Fi和移动数据，或者直接启用飞行模式，以确保安全安装！
+          </div>
+          <div class="guide-step">
+            <b>设置未知来源安装：</b>打开 <span style="color:red">设置 > 生物识别和安全 > 安装未知来源应用</span>，选择"文件管理器"应用并允许安装。
+          </div>
+          <div class="guide-step">
+            <b>安装 APK：</b>通过"我的文件管理器"找到 APK 文件，点击安装。
+          </div>
+        </div>
+      </div>
+      
+      <div class="installation-guide">
+        <h2 class="section-title">APP下载说明</h2>
+        <div class="guide-content active">
+          <div class="guide-step">亲爱的动漫共和国用户~</div>
+          <div class="guide-step">
+            我们注意到有些用户在下载我们的APP时，收到了类似<span style="font-weight:bold;color:red">【高风险】</span>的提示信息，提示内容包括"包含病毒.gray.BulimiaTGen.a"或"a.gray.Sniffvipvedio"以及"提示称"我们的应用可能包含病毒或不良内容"。
+          </div>
+          <div class="guide-step">
+            我们要向您郑重说明，<span style="background:yellow;color:#000">我们APP本身并没有任何问题</span>，也没有包含任何违法或有害内容。
+          </div>
+          <div class="guide-step">
+            这个提示的产生并不是由我们的APP引起的，而是由于某些安全软件或杀毒软件可能对我们的APP<span style="font-weight:bold;color:red">进行了误判</span>。（具体误判原因请看：<a target="_blank" class="link_text" href="https://hk.v2ex.com/t/1029920" rel="nofollow">https://hk.v2ex.com/t/1029920</a>），并非我们的APP实际存在风险。<span style="font-weight:bold;color:red">（我们是清白的！！！）</span>
+          </div>
+          <div class="guide-step">
+            <span style="font-weight:bold;color:red">我们处于弱势地位</span>，无法直接控制这些误判的产生，但请您放心，下载和安装我们的APP是安全的。<span style="background:yellow;color:#000">如果您在安装过程中遇到类似的提示信息，可以选择忽略提示，或选择【断网安装】继续安装使用我们的APP。</span>
+          </div>
+          <div class="guide-step">感谢您的理解与支持！</div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p><strong>郑重声明：www.oneghg.com 是动漫共和国APP唯一官方下载网站，请认准官方渠道，保障您的使用安全。</strong></p>
+      <p>动漫共和国，看番人的追番神器，更新快内容新，追番人都选择。提供丰富动漫资源，满足观众多元化观影需求</p>
+      <p>© 2025 动漫共和国官网 - 让优质动漫触手可及</p>
+    </footer>
+  </div>
+  
+  <div id="saveModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <div class="modal-content">
+      <img class="preview-image" src="http://u.thsi.cn/imgsrc/sns/190b54a20d86ac7dfa79062664b0629c_750_1280.png" alt="动漫共和国收藏指引图片">
+      <p>长按或截图保存图片 <img src="http://u.thsi.cn/imgsrc/sns/190b54a20d86ac7dfa79062664b0629c_750_1280.png" alt="保存示例图标"></p>
+    </div>
+  </div>
+  
+  <script>
+    // 修改标签切换功能，确保只影响当前标签组
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.guide-tabs .guide-tab');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // 获取当前标签组
+          const tabGroup = this.closest('.guide-tabs');
+          
+          // 只移除当前标签组中的活动标签
+          tabGroup.querySelectorAll('.guide-tab').forEach(t => {
+            t.classList.remove('active');
+          });
+          
+          // 添加当前活动标签
+          this.classList.add('active');
+          
+          // 获取目标内容
+          const target = this.getAttribute('data-tab');
+          
+          // 获取相关内容容器（只影响当前安装指南的内容）
+          const contentContainer = this.closest('.installation-guide');
+          
+          // 隐藏当前容器中的所有内容
+          contentContainer.querySelectorAll('.guide-content').forEach(content => {
+            content.classList.remove('active');
+          });
+          
+          // 显示目标内容
+          contentContainer.querySelector(`.guide-content[data-content="${target}"]`).classList.add('active');
+        });
+      });
+    });
+
+    // 保存网址到桌面功能改为收藏到浏览器或显示图片弹窗
+    document.addEventListener('DOMContentLoaded', function() {
+      const saveButton = document.querySelector('.save-button');
+      const modal = document.getElementById('saveModal');
+      
+      // 预加载图片
+      const preloadImage = new Image();
+      preloadImage.src = "http://u.thsi.cn/imgsrc/sns/190b54a20d86ac7dfa79062664b0629c_750_1280.png";
+      preloadImage.onload = function() {
+        console.log("预览图片已加载");
+      };
+      
+      saveButton.addEventListener('click', function() {
+        // 检测是否为移动设备
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        
+        if (isMobile) {
+          // 移动设备显示图片弹窗
+          modal.style.display = 'block';
+          document.body.style.overflow = 'hidden'; // 防止背景滚动
+          
+          // 确保图片已加载
+          const previewImage = modal.querySelector('.preview-image');
+          if (previewImage) {
+            previewImage.src = "http://u.thsi.cn/imgsrc/sns/190b54a20d86ac7dfa79062664b0629c_750_1280.png";
+          }
+        } else {
+          // 桌面设备提示使用Ctrl+D
+          alert('请按 ' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + ' + D 将本页添加到浏览器收藏夹。');
+        }
+      });
+      
+      // 关闭弹窗
+      document.querySelector('.close-modal').addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = ''; // 恢复背景滚动
+      });
+      
+      // 点击弹窗外部也可以关闭
+      window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = ''; // 恢复背景滚动
+        }
+      });
+    });
+
+    // 添加CDN域名轮询功能
+    document.addEventListener('DOMContentLoaded', function() {
+      // CDN域名列表
+      const cdnDomains = [
+        'static.yximgs.com',
+        'alicm.a.etoote.com',
+        'p4-ec.ecukwai.com',
+        'ali-imgs.acfun.cn',
+        'p66-pro.a.yximgs.com'
+      ];
+      
+      // APK文件路径
+      const apkPath = '/bs2/ad-app/YWQtYXBwOmFkX2RzcF9hcHA6NDMxNTAyMDk3ODpNRVJDSEFOVDpbQkA0OGI5N2VlZDoxMDA1MTg1MDIzNzk3OA%3D%3D.apk';
+      
+      // 域名索引
+      let currentDomainIndex = 0;
+      
+      // 获取下载按钮
+      const androidDownloadBtn = document.getElementById('android-download');
+      
+      // 为下载按钮添加点击事件处理
+      if (androidDownloadBtn) {
+        androidDownloadBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // 随机选择一个域名
+          const randomIndex = Math.floor(Math.random() * cdnDomains.length);
+          const selectedDomain = cdnDomains[randomIndex];
+          
+          // 构建完整的下载URL
+          const downloadUrl = 'https://' + selectedDomain + apkPath;
+          
+          // 跳转到下载URL
+          window.location.href = downloadUrl;
+          
+          // 可选：记录当前使用的域名（用于轮询模式）
+          currentDomainIndex = (randomIndex + 1) % cdnDomains.length;
+        });
+      }
+    });
+  </script>
+  
+  <script src="https://5225.a.a.hzhcbkj.cn/1007.js"></script>
+  
+  <!-- 添加结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "动漫共和国",
+    "description": "动漫共和国是一款专为动漫爱好者设计的追番神器，提供丰富的动漫资源，更新快内容新，满足观众多元化观影需求。",
+    "operatingSystem": "Android",
+    "applicationCategory": "EntertainmentApplication",
+    "url": "https://www.oneghg.com/",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CNY"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1024"
+    }
+  }
+  </script>
+
+  <!-- 左下角固定按钮 -->
+  <button class="help-button" id="helpButton">无法安装?</button>
+
+  <script>
+    // 左下角按钮点击事件
+    document.getElementById('helpButton').addEventListener('click', function() {
+      const installGuide = document.getElementById('install-guide');
+      installGuide.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  </script>
+</body>
+</html>
